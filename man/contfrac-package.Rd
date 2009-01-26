@@ -21,13 +21,19 @@ License: \tab GPL \cr
 \author{
 Robin K. S. Hankin
 
-Maintainer: <r.hankin@noc.soton.ac.uk>
+Maintainer: <rksh1@cam.ac.uk>
 }
 \references{
-  \item W. H. Press, B. P. Flannery, S. A. Teukolsky, and
-  W. T. Vetterling 1992.  \emph{Numerical recipes 3rd edition: the art of
-    scientific computing}.  Cambridge University Press; section 5.2
-  \dQuote{Evaluation of continued fractions}
+  \itemize{
+    \item
+    W. H. Press, B. P. Flannery, S. A. Teukolsky, and
+    W. T. Vetterling 1992.  \emph{Numerical recipes 3rd edition: the art of
+      scientific computing}.  Cambridge University Press; section 5.2
+    \dQuote{Evaluation of continued fractions}
+    \item W. J. Lenz 1976.  Generating Bessel functions in Mie
+    scattering calculations using continued fractions.  \emph{Applied
+      Optics}, 15(3):668-671
+    }
 }
 \keyword{ package }
 \examples{

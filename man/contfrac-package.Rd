@@ -21,7 +21,7 @@ License: \tab GPL \cr
 \author{
 Robin K. S. Hankin
 
-Maintainer: <rksh1@cam.ac.uk>
+Maintainer: <hankin.robin@gmail.com>
 }
 \references{
   \itemize{

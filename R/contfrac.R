@@ -100,7 +100,7 @@
 
 "as_cf" <- function(x, n=10){
   stopifnot(length(x)==1)
-  stopifnot(is.real(x))
+  stopifnot(is.double(x))
   out <- double(n)
 
   for(i in seq_len(n)){

@@ -1,0 +1,10 @@
+bf73dbb5fa8956c4d31bc8d5d13d7b30 *DESCRIPTION
+6119adb399676151c3ac5b4e1a873b24 *NAMESPACE
+6bd5576478f6c78becf1e30f7c054f17 *R/contfrac.R
+9fca3ecd77fca74062fa41efb058383d *inst/CITATION
+b38b59bdf14201f3b20991c0d94e1db8 *man/CF.Rd
+38167c6940d3b1d37f9d19d7ee8d966f *man/as_cf.Rd
+3ff705804a86b37acb84c188e8b7e3c9 *man/contfrac-package.Rd
+42352319ef1354d458571613abe4d54c *man/convergents.Rd
+18696ab2e46891ae7e10adedb05c844e *src/contfrac.c
+783e06b91111c01eeb9413287cec5d02 *tests/aaa.R

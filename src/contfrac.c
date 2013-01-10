@@ -39,7 +39,7 @@ void contfrac_complex(double *ar, double *ai, double *br, double *bi, int *n, do
 	double TINY = 1e-30;
 	double EPS = 2.22044604925031e-16;
 	double Cr, Ci, Dr, Di, Deltar, Deltai;
-	double jj, diff, tempr, tempi, Cinvr, Cinvi;
+	double jj, tempr, tempi, Cinvr, Cinvi;
 	int j;
 
 	*fr = TINY;
@@ -83,7 +83,7 @@ void contfrac_complex(double *ar, double *ai, double *br, double *bi, int *n, do
 		*fr = tempr*Deltar - tempi*Deltai;
 		*fi = tempr*Deltai + tempi*Deltar;   /* f = f*D */
 
-		diff = (Deltar-1.0)*(Deltar-1.0) + Deltai*Deltai;   /* diff = mod(Delta-1)^2 */
+/* diff = (Deltar-1.0)*(Deltar-1.0) + Deltai*Deltai;   /* diff = mod(Delta-1)^2 */
 
 		if(  ( (Deltar-1.0) <= EPS) && 
 		     ( (1.0-Deltar) <= EPS) &&

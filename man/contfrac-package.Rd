@@ -37,6 +37,14 @@ Maintainer: <hankin.robin@gmail.com>
 }
 \keyword{ package }
 \examples{
+
+
+# approximate real numbers with continued fraction:
+as_cf(pi)
+
+as_cf(exp(1),25)    # OK up to element 21 (which should be 14)
+
+
   # Some convergents of pi:
   jj <- convergents(c(3,7,15,1,292))
   jj$A / jj$B - pi

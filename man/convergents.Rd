@@ -63,7 +63,7 @@ where \code{a} = \eqn{a_1,a_2,\ldots}{a_1,a_2,...}
 # Successive approximations to pi:
 
 jj <- convergents(c(3,7,15,1,292))
-jj$a/jj$B - pi  
+jj$A/jj$B - pi     # should get smaller
 
 
 convergents(rep(1,10))

@@ -13,7 +13,7 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
 }
 \arguments{
   \item{a,b}{In function \code{CF()}, the elements of \code{a} are the
-    partial denomintors; in \code{GCF()} the elements of \code{a} are
+    partial denominators; in \code{GCF()} the elements of \code{a} are
     the partial numerators and the elements of \code{b} the partial
     denominators} 
   \item{finite}{Boolean, with default \code{FALSE} meaning to iterate
@@ -55,7 +55,7 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
 \examples{
 
 phi <- (sqrt(5)+1)/2
-phi_cf <- CF(rep(1,100))
+phi_cf <- CF(rep(1,100))     # phi = [1;1,1,1,1,1,...]
 phi - phi_cf     # should be small
 
 # The tan function:

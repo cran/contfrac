@@ -1,15 +1,15 @@
 \name{as_cf}
 \alias{as_cf}
-\title{Converts a real number to continued fraction form}
+\title{Approximates a real number in continued fraction form}
 \description{
-Converts a real number to continued fraction form using a standard
+Approximates a real number in continued fraction form using a standard
 simple algorithm
 }
 \usage{
 as_cf(x, n = 10)
 }
 \arguments{
-  \item{x}{real number to be converted to continued fraction form}
+  \item{x}{real number to be approximated in continued fraction form}
   \item{n}{Number of partial denominators to evaluate; see Notes}
 }
 \author{Robin K. S. Hankin}

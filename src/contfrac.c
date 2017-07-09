@@ -1,6 +1,6 @@
 #include <math.h>
 
-void contfrac(double *a, double *b, int *n, double *f, double *tol)
+void c_contfrac(const double *a, const double *b, const int *n, double *f, double *tol)
 {
 	double TINY = 1e-30;
 	double EPS = 2.22044604925031e-16;
@@ -34,7 +34,7 @@ void contfrac(double *a, double *b, int *n, double *f, double *tol)
 	return;
 }
 
-void contfrac_complex(double *ar, double *ai, double *br, double *bi, int *n, double *fr, double *fi, double *tol)
+void c_contfrac_complex(const double *ar, const double *ai, const double *br, const double *bi, const int *n, double *fr, double *fi, double *tol)
 {
 	double TINY = 1e-30;
 	double EPS = 2.22044604925031e-16;
@@ -83,7 +83,8 @@ void contfrac_complex(double *ar, double *ai, double *br, double *bi, int *n, do
 		*fr = tempr*Deltar - tempi*Deltai;
 		*fi = tempr*Deltai + tempi*Deltar;   /* f = f*D */
 
-/* diff = (Deltar-1.0)*(Deltar-1.0) + Deltai*Deltai;   /* diff = mod(Delta-1)^2 */
+		/* diff = (Deltar-1.0)*(Deltar-1.0) + Deltai*Deltai; 
+		   diff = mod(Delta-1)^2 */
 
 		if(  ( (Deltar-1.0) <= EPS) && 
 		     ( (1.0-Deltar) <= EPS) &&
@@ -98,7 +99,7 @@ void contfrac_complex(double *ar, double *ai, double *br, double *bi, int *n, do
 	return;
 }
 
-void convergents(double *a, double *b, double *b0, int *n, double *A, double *B){
+void c_convergents(const double *a, const double *b, const double *b0, const int *n, double *A, double *B){
 	
 	A[0] = *b0; 
 	B[0] = 1.0;
@@ -113,7 +114,7 @@ void convergents(double *a, double *b, double *b0, int *n, double *A, double *B)
 	
 }
 
-void convergents_complex(double *ar, double *ai, double *br, double *bi, double *b0r, double *b0i, int *n, double *Ar, double *Ai, double *Br, double *Bi){
+void c_convergents_complex(const double *ar, const double *ai, const double *br, const double *bi, const double *b0r, const double *b0i, const int *n, double *Ar, double *Ai, double *Br, double *Bi){
 
 	Ar[0] = *b0r;
 	Ai[0] = *b0i;

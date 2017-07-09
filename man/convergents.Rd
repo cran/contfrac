@@ -1,6 +1,10 @@
 \name{convergents}
 \alias{convergents}
 \alias{gconvergents}
+\alias{c_contfrac}
+\alias{c_contfrac_complex}
+\alias{c_convergents}
+\alias{c_convergents_complex}
 \title{Partial convergents of continued fractions}
 \description{
   Partial convergents of continued fractions or generalized continued fractions

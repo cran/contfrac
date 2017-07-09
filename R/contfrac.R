@@ -19,7 +19,7 @@
   if(is.complex(a) | is.complex(b)){
     a <- as.complex(a)
     b <- as.complex(b)
-    jj <- .C("contfrac_complex",
+    jj <- .C("c_contfrac_complex",
              as.double(Re(a)),
              as.double(Im(a)),
              as.double(Re(b)),
@@ -38,7 +38,7 @@
   } else {
     stopifnot(is.numeric(a))
     stopifnot(is.numeric(b))
-    jj <-  .C("contfrac",
+    jj <-  .C("c_contfrac",
               a = as.double(as.vector(a)),
               b = as.double(as.vector(b)),
               n = as.integer(n),
@@ -63,7 +63,7 @@
   if(is.complex(a) | is.complex(b) | is.complex(b0)){
     a <- as.complex(a)
     b <- as.complex(b)
-    jj <- .C("convergents_complex",
+    jj <- .C("c_convergents_complex",
              as.double(as.vector(Re(a))),
              as.double(as.vector(Im(a))),
              as.double(as.vector(Re(b))),
@@ -81,7 +81,7 @@
   } else {
     stopifnot(is.numeric(a))
     stopifnot(is.numeric(b))
-    jj <-  .C("convergents",
+    jj <-  .C("c_convergents",
               as.double(as.vector(a)),
               as.double(as.vector(b)),
               as.double(b0),
